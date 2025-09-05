@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Height Growth Secrets</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="assets/logo.png" alt="Logo" class="logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="courses.html">Courses</a>
+      <a href="payment.html">Payment</a>
+      <a href="join.html">Join Now</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to Height Growth Secrets 🌱</h1>
+    <p>Your trusted partner in personal and physical growth.</p>
+    <a href="programs.html" class="btn">Explore Programs</a>
+  </section>
+
+  <footer>
+    <p>© 2025 Height Growth Secrets | Owner: Aniruddh Singh Rajawat</p>
+    <p>Follow us on <a href="https://instagram.com/heightgrowthsecrets" target="_blank">Instagram</a></p>
+  </footer>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Height Growth Secrets</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="index.html">⬅ Home</a>
+  </header>
+  <section>
+    <h1>About Us</h1>
+    <p>Height Growth Secrets is dedicated to helping individuals unlock their full potential — physically and personally. With science-backed methods and guided programs, we support your growth journey.</p>
+  </section>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programs - Height Growth Secrets</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><a href="index.html">⬅ Home</a></header>
+  <section>
+    <h1>Our Programs</h1>
+    <ul>
+      <li>Nutrition for Growth</li>
+      <li>Posture & Stretching Exercises</li>
+      <li>Mindset Development</li>
+      <li>Premium Height Growth Plan</li>
+    </ul>
+  </section>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses - Height Growth Secrets</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><a href="index.html">⬅ Home</a></header>
+  <section>
+    <h1>Courses (Unlocked After Payment)</h1>
+    <p>If you’ve already paid, your course materials will appear here.</p>
+    <div class="locked">🔒 Locked until payment is confirmed</div>
+  </section>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment - Height Growth Secrets</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><a href="index.html">⬅ Home</a></header>
+  <section>
+    <h1>Make Payment</h1>
+    <p>UPI ID: <strong>9302569678@ibl</strong></p>
+    <p>Scan this QR code to pay:</p>
+    <img src="assets/payment-qr.png" alt="UPI QR" class="qr">
+    <p>Use coupon code <b>MKFIT</b> for 30% discount.</p>
+  </section>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join Now - Height Growth Secrets</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><a href="index.html">⬅ Home</a></header>
+  <section>
+    <h1>Join Our Community</h1>
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <button type="submit">Join Now</button>
+    </form>
+  </section>
+</body>
+</html>body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f9ff;
+  color: #333;
+  text-align: center;
+}
+
+header {
+  background: #0055ff;
+  padding: 15px;
+}
+
+header a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.logo {
+  height: 50px;
+}
+
+.hero {
+  padding: 60px 20px;
+  background: linear-gradient(120deg, #0055ff, #66ccff);
+  color: white;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background: #fff;
+  color: #0055ff;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.qr {
+  width: 200px;
+  margin: 20px auto;
+  display: block;
+}
+
+form input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 80%;
+}
+
+button {
+  padding: 10px 20px;
+  background: #0055ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}// Coupon code system
+const coupon = "MKFIT";
+function applyCoupon(code, price) {
+  if (code === coupon) {
+    return price * 0.7; // 30% off
+  }
+  return price;
+}
